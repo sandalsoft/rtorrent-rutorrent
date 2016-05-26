@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 USER root
 
-# add extra sources 
+# add extra sources
 ADD ./extra.list /etc/apt/sources.list.d/extra.list
 
 # install
@@ -28,9 +28,14 @@ ADD supervisord.conf /etc/supervisor/conf.d/
 
 EXPOSE 80
 EXPOSE 443
-EXPOSE 49160
-EXPOSE 49161
-VOLUME /downloads
+EXPOSE 51101
+EXPOSE 51102
+
+VOLUME /incomplete
+VOLUME /complete
+VOLUME /watch
+VOLUME /session
+VOLUME /rtorrent
+VOLUME /rutorrent
 
 CMD ["supervisord"]
-
