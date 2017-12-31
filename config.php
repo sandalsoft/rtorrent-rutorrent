@@ -17,7 +17,7 @@
 	$overwriteUploadedTorrents = false;
 	$topDirectory = '/';
 	$forbidUserSettings = false;
-	$scgi_port = 5000;
+	$scgi_port = 5555;
 	$scgi_host = "127.0.0.1";
 	$XMLRPCMountPoint = "/RPC2";
 	$pathToExternals = array(

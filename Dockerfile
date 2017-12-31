@@ -14,10 +14,11 @@ ADD rutorrent-*.nginx /root/
 
 # download rutorrent
 RUN mkdir -p /var/www && \
-    wget --no-check-certificate https://bintray.com/artifact/download/novik65/generic/ruTorrent-3.7.zip && \
-    unzip ruTorrent-3.7.zip && \
-    mv ruTorrent-master /var/www/rutorrent && \
-    rm ruTorrent-3.7.zip
+    wget --no-check-certificate https://github.com/Novik/ruTorrent/archive/v3.8.zip && \
+    unzip v3.8.zip && \
+    mv ruTorrent-3.8 /var/www/rutorrent && \
+    rm v3.8.zip
+
 ADD ./config.php /var/www/rutorrent/conf/
 
 # add startup scripts and configs

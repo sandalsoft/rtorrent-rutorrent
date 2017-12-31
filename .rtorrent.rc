@@ -1,9 +1,9 @@
 # LOGGING #
 log.open_file = "rtorrent", /rtorrent/rtorrent.log
-log.add_output = "info", "rtorrent"
+log.add_output = "debug", "rtorrent"
 
 # RPC #
-scgi_port=0.0.0.0:5000
+scgi_port=0.0.0.0:5555
 encoding_list = UTF-8
 
 # TRACKERS #

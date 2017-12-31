@@ -20,7 +20,7 @@ server {
 
 	location /RPC2 {
     include scgi_params;
-	  scgi_pass 0.0.0.0:5000;
+	  scgi_pass 0.0.0.0:5555;
 	}
 
 }
